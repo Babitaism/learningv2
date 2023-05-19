@@ -17,6 +17,7 @@ let findPermutations = (string) => {
       }
     }
     return permutationsArray;
+    // test comment
   };
   
   console.log(findPermutations("abcd"))
