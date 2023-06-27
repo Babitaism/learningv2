@@ -12,5 +12,5 @@ function palindrome(arr){
     }
     return flag
     }
-    let checkPalindrome = palindrome([1,2,3,3,2,1])
+    let checkPalindrome = palindrome([1,2,3,4,3,2,1])
     console.log(checkPalindrome)
