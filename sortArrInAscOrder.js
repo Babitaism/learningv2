@@ -20,3 +20,4 @@ function sortingArr(arr) {
 
 // let sortedArray = sortArr([1,3,5,4,6,9,2,7,0])
 // console.log(sortedArray)
+
