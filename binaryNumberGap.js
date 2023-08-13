@@ -12,7 +12,7 @@ function maximumArrayDifference(string) {
   }
 
   for (let j = 0; j < indexArray.length - 1; j++) {
-    let subtract = indexArray[j + 1] - indexArray[j];
+     subtract = indexArray[j + 1] - indexArray[j];
     diffArray.push(subtract);
   }
 
