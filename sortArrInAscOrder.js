@@ -7,8 +7,8 @@ function sortingArr(arr) {
     });
     return arr;
   }
-  
-  let array = sortingArr([1, 6, 7, 20, 5, 10, 3, -1]);
+
+  let array = sortingArr([1, 6, 7, 20, 5, 10,111,11, 3, -1]);
   console.log(array);
 
   // function to sort an array till number 9

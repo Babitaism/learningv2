@@ -1,10 +1,10 @@
 function matchedPairSum(arr, sum) {
   let len = arr.length;
   let array = [];
-  
-  for (let x = 0; x < len-1; x++) {
-    for (y = x+1; y < len; y++) {
-      if (sum == arr[x] + arr[y]) { 
+
+  for (let x = 0; x < len; x++) {
+    for (y = x+1; y < len+1; y++) {
+      if (sum == arr[x] + arr[y]) {
         array.push([arr[x] , arr[y]])
       }
     }
