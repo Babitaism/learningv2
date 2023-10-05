@@ -11,13 +11,13 @@ let books = [
       let value = books[i].title;
       obj[value] = books[i];
     }
+    // console.log(obj)
     for(let i in obj){
       blankarr.push(obj[i]);
     }
     return blankarr;
   }
-  
+
   let x = rename(books);
   console.log(x);
-  
-  
+
