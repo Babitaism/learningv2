@@ -12,11 +12,17 @@ function isValidSParenthesis(str) {
           value = false;
           break
         }
-        if (current == "(" && str[i] != ")") {
+      }
+      if (str[i] == "}" || str[i] == "]" || str[i] == ")") {
+        current = stack.pop(str[i]);
+        if (current == "[" && str[i] != "]") {
           value = false;
           break
         }
-        if (current == "[" && str[i] != "]") {
+      }
+      if (str[i] == "}" || str[i] == "]" || str[i] == ")") {
+        current = stack.pop(str[i]);
+        if (current == "(" && str[i] != ")") {
           value = false;
           break
         }
@@ -25,5 +31,5 @@ function isValidSParenthesis(str) {
     return stack.length == 0 && value;
   }
 
-  let output = isValidSParenthesis("({}");
+  let output = isValidSParenthesis("([])");
   console.log(output);
