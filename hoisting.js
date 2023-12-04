@@ -28,3 +28,16 @@ a = x();
 function x() {
   console.log("hoisted");
 }
+
+//closure
+function outer() {
+  let x = 1;
+
+  function inner() {
+    let y = 3;
+    console.log(x + y);
+  }
+
+  inner();
+}
+outer();
